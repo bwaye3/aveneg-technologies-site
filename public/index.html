@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aveneg Technologies, LLC</title>
+<meta name="description" content="Aveneg Technologies, LLC builds small, private software for people who keep records that matter. Publisher of Watch Vault Archive.">
+<meta name="robots" content="index, follow">
+<style>
+  :root {
+    --ink: #0E0F12;
+    --surface: #16181D;
+    --surface-2: #1E2128;
+    --line: #2A2E37;
+    --line-2: #363B45;
+    --text: #E7E4DC;
+    --muted: #A8ABB2;
+    --muted-2: #9297A2;
+    --prose: #B9BCC2;
+    --brass: #C6A15B;
+    --brass-dim: #A28442;
+    --brass-wash: rgba(198, 161, 91, .10);
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", "JetBrains Mono", "Roboto Mono", Menlo, Consolas, monospace;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --wrap: 780px;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--brass); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--text); }
+  ::selection { background: var(--brass); color: #14110a; }
+
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 clamp(20px, 5vw, 40px); }
+
+  header.top {
+    border-bottom: 1px solid var(--line);
+    padding: 22px 0;
+  }
+  .mark {
+    font-family: var(--mono);
+    font-weight: 500;
+    letter-spacing: .02em;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .mark b { color: var(--brass); font-weight: 600; }
+
+  section { padding: clamp(48px, 8vw, 88px) 0; }
+  section + section { border-top: 1px solid var(--line); }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted-2);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-weight: 400;
+    line-height: 1.15;
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    margin: 0 0 18px;
+    text-wrap: balance;
+  }
+  h2 {
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    margin: 0 0 16px;
+  }
+  p { color: var(--prose); margin: 0 0 16px; max-width: 62ch; }
+  p.lead { color: var(--muted); font-size: 1.0625rem; max-width: 56ch; }
+  p:last-child { margin-bottom: 0; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 28px 30px;
+  }
+  .card + .card { margin-top: 16px; }
+  .card h3 { margin: 0 0 8px; font-weight: 500; font-size: 1.0625rem; color: var(--text); }
+  .card p { margin: 0 0 14px; }
+  .card .btn { margin-top: 4px; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--surface-2);
+    border: 1px solid var(--line-2);
+    color: var(--text);
+    padding: 9px 15px;
+    border-radius: 4px;
+    font-size: .9375rem;
+    text-decoration: none;
+  }
+  .btn:hover { border-color: var(--brass-dim); color: var(--text); background: #262a33; }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 28px;
+    font-family: var(--mono);
+    font-size: .875rem;
+  }
+  .contact-row div { color: var(--muted-2); }
+  .contact-row a { display: block; margin-top: 2px; }
+
+  footer.foot {
+    border-top: 1px solid var(--line);
+    padding: 28px 0;
+  }
+  footer.foot p {
+    color: var(--muted-2);
+    font-size: .8125rem;
+    max-width: none;
+    margin: 0 0 4px;
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="/">Aveneg <b>Technologies</b></a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Aveneg Technologies, LLC</p>
+    <h1>Small, private software for records that matter.</h1>
+    <p class="lead">
+      We build focused desktop applications for people who keep a careful
+      record of something valuable — encrypted, local-first, and built to
+      outlast any one release.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">What we build</p>
+    <h2>One product today. Built to hold more.</h2>
+    <p>
+      Every application we publish shares the same starting position: your
+      data belongs on your own computer, not on a server you have to trust.
+      No accounts, no cloud sync you didn&rsquo;t ask for, and no business
+      model built on holding a copy of what you own.
+    </p>
+
+    <div class="card">
+      <h3>Watch Vault Archive</h3>
+      <p>
+        An encrypted, offline desktop application for cataloguing a watch
+        collection — appraisals, service history, provenance and succession,
+        held entirely on your own computer.
+      </p>
+      <a class="btn" href="https://watchvaultarchive.com">watchvaultarchive.com →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>Business and legal inquiries.</h2>
+    <div class="contact-row">
+      <div>Commercial licensing
+        <a href="mailto:legal@avenegtechnologies.com">legal@avenegtechnologies.com</a>
+      </div>
+      <div>General
+        <a href="mailto:info@avenegtechnologies.com">info@avenegtechnologies.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>© 2026 Aveneg Technologies, LLC</p>
+    <p>8735 Dunwoody Place, Ste R, Atlanta, GA 30350</p>
+  </div>
+</footer>
+
+</body>
+</html>
