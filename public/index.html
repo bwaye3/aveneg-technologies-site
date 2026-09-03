@@ -4,8 +4,80 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aveneg Technologies, LLC</title>
-<meta name="description" content="Aveneg Technologies, LLC builds small, private software for people who keep records that matter. Publisher of Watch Vault Archive.">
+<meta name="description" content="Aveneg Technologies, LLC builds small, private, offline desktop software for people who keep a careful record of something valuable. Publisher of Watch Vault Archive.">
 <meta name="robots" content="index, follow">
+<link rel="canonical" href="https://avenegtechnologies.com/">
+<meta name="theme-color" content="#0E0F12">
+
+<link rel="icon" type="image/svg+xml" href="/mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aveneg Technologies">
+<meta property="og:title" content="Aveneg Technologies, LLC">
+<meta property="og:description" content="Small, private, offline desktop software for people who keep a careful record of something valuable. Publisher of Watch Vault Archive.">
+<meta property="og:url" content="https://avenegtechnologies.com/">
+<meta property="og:image" content="https://avenegtechnologies.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aveneg Technologies, LLC">
+<meta name="twitter:description" content="Small, private, offline desktop software for people who keep a careful record of something valuable. Publisher of Watch Vault Archive.">
+<meta name="twitter:image" content="https://avenegtechnologies.com/og-image.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://avenegtechnologies.com/#org",
+      "name": "Aveneg Technologies, LLC",
+      "url": "https://avenegtechnologies.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://avenegtechnologies.com/icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "email": "info@avenegtechnologies.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "8735 Dunwoody Place, Ste R",
+        "addressLocality": "Atlanta",
+        "addressRegion": "GA",
+        "postalCode": "30350",
+        "addressCountry": "US"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "info@avenegtechnologies.com",
+          "contactType": "customer support",
+          "availableLanguage": "English"
+        },
+        {
+          "@type": "ContactPoint",
+          "email": "legal@avenegtechnologies.com",
+          "contactType": "commercial licensing",
+          "availableLanguage": "English"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://avenegtechnologies.com/#site",
+      "name": "Aveneg Technologies",
+      "url": "https://avenegtechnologies.com",
+      "description": "Aveneg Technologies, LLC builds small, private, offline desktop software for people who keep a careful record of something valuable.",
+      "publisher": { "@id": "https://avenegtechnologies.com/#org" },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+
 <style>
   :root {
     --ink: #0E0F12;
@@ -44,12 +116,18 @@
     border-bottom: 1px solid var(--line);
     padding: 22px 0;
   }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  .brand-mark { width: 24px; height: 24px; flex: none; }
   .mark {
     font-family: var(--mono);
     font-weight: 500;
     letter-spacing: .02em;
     color: var(--text);
-    text-decoration: none;
     font-size: 15px;
   }
   .mark b { color: var(--brass); font-weight: 600; }
@@ -133,7 +211,13 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="mark" href="/">Aveneg <b>Technologies</b></a>
+    <a class="brand" href="/">
+      <svg class="brand-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <circle cx="16" cy="16" r="15.2" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <path fill="currentColor" d="M16 7.2 L24.4 24.4 H20.8 L19.1 20.7 H12.9 L11.2 24.4 H7.6 Z M16 12.3 L13.9 17.4 H18.1 Z"/>
+      </svg>
+      <span class="mark">Aveneg <b>Technologies</b></span>
+    </a>
   </div>
 </header>
 
